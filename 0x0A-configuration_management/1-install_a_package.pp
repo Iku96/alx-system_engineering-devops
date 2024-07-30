@@ -11,3 +11,8 @@ exec {'install_flask':
   path    => ['/usr/bin', '/bin'],
   unless  => '/usr/bin/pip3/ show flask | grep -q "version: 2.1.0"',
 }
+
+# Ensure flask is installed
+package {'flask':
+  ensure => '2.1.0',
+}
