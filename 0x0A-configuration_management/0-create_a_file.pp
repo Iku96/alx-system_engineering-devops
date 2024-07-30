@@ -1,5 +1,4 @@
-/* A puppet manifest that creates a file in tmp which contains
-the words "I love Puppet". */ 
+# A puppet manifest that creates a file in tmp which contains the words "I love Puppet". 
 
 file {'/tmp/school':
   ensure  => 'file',
