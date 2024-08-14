@@ -3,6 +3,7 @@
 of subscribers for a given subreddit"""
 import requests
 
+
 def number_of_subscribers(subreddit):
     # Defining the URL for the API request
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
