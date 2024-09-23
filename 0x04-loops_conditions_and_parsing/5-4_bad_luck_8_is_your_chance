@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This scriptsloops from 1 to 10 and:
+# Prints "bad luck" for the 4th loop iteration
+# Prints "good luck" for the 8th loop iteration
+# Prints "Best School" for the other iterations
+
+a=1
+while (( a <= 10 ));
+do
+    if (( a == 4 )); then
+        echo "bad luck"
+        a=$(( a + 1 ))
+        continue
+    elif (( a == 8)); then
+        echo "good luck"
+	a=$(( a + 1 ))
+	continue
+    else
+        echo "Best School"
+    fi
+    a=$(( a + 1 ))
+done
